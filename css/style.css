@@ -11,6 +11,10 @@ body {
 h1 {
   font-size: 63px;
 }
+blockquote {
+  border: none;
+}
+
 blockquote footer {
   font-size: 100%;
 }
