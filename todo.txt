@@ -1,5 +1,8 @@
 TODO
-- onload, call random contents ???? How to do onload with vanilla js
+- preload images for better performance - See LoJack approach http://stackoverflow.com/questions/901677/the-definitive-best-way-to-preload-images-using-javascript-jquery
+    -- to make this work better or easier, I'll rename the images using an integer, which will allow me to 
+    emmetize these invisible 1x1 image divs BAM!
+- Instead of on load random quote, I'll hardcode quote 0
 - offsets to bring things tighter towards the center.
 - breakpoints to change font-size for mobile
 - Give a specific height for quote area so that button stays stationary
