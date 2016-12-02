@@ -1,0 +1,7 @@
+TODO
+- onload, call random contents ???? How to do onload with vanilla js
+- offsets to bring things tighter towards the center.
+- breakpoints to change font-size for mobile
+- Give a specific height for quote area so that button stays stationary
+    Or maybe using margin collapse, text can have margin-bottom and 
+    button can have margin-top
