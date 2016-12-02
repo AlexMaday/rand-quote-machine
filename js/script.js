@@ -76,19 +76,10 @@ var author = document.getElementById('author');
 var authorImage = document.getElementById('authorImage');
 var getQuote = document.getElementById('getQuote');
 
-var lastChoice;
 // replace quote contents
 var newQuote = function() {
     var choice = Math.floor(Math.random() * quotations.length);
     
-    // DRY - it's boring'
-    while (choice != lastChoice) {
-        choice = Math.floor(Math.random() * quotations.length);
-        if (choice != lastChoice) { 
-            lastChoice = choice;
-            break;
-        }
-    }
     authorImage.src = quotations[choice]["authorImage"];
     quoteText.innerText = quotations[choice]["text"];
     author.innerHTML = quotations[choice]["author"];
