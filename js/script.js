@@ -80,14 +80,17 @@ var quoteText = document.getElementById('quoteText');
 var author = document.getElementById('author');
 var authorImage = document.getElementById('authorImage');
 var getQuote = document.getElementById('getQuote');
+// var tweetText = document.getElementById('btnTweet');
 
-// replace quote contents
+// replace quote contents on page and twitter's data-text attribute 
 var newQuote = function() {
     var choice = Math.floor(Math.random() * quotations.length);
     
     authorImage.src = quotations[choice]["authorImage"];
     quoteText.innerText = quotations[choice]["text"];
     author.innerHTML = quotations[choice]["author"];
+
+    // tweetText.setAttribute('data-text', quotations[choice]["text"]);
     return true;
 }
 
