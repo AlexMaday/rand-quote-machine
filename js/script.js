@@ -69,6 +69,11 @@ var quotations =
      "text": "They who can give up essential liberty to obtain a little temporary safety deserve neither liberty nor safety",
      "author": "Benjamin Franklin",
      "authorImage": "https://dl.dropboxusercontent.com/u/5729928/images/rqm/11.jpg"
+   },
+   {
+       "text": "Everyone should learn how to program a computer because it teaches you how to think",
+       "author": "Steve Jobs",
+       "authorImage": "https://dl.dropboxusercontent.com/u/5729928/images/rqm/12.jpg"
    }
 ];
 var quoteText = document.getElementById('quoteText');

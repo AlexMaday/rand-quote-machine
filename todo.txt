@@ -1,4 +1,7 @@
 TODO
+
+=== BRANCH BRANCH BRANCH ===
+For the following, use branches YO
 - Give a specific height for quote area so that button stays stationary
     Or maybe using margin collapse, text can have margin-bottom and 
     button can have margin-top
