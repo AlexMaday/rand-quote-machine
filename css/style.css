@@ -5,9 +5,12 @@ body {
 h1 {
   font-size: 63px;
 }
-.shadow {	
+.shadow {
   background-color: #FFFFFF;	
   box-shadow: 2px 3px 7px 1px #333;
+}
+.btn {
+  padding: 3px 12px;
 }
 blockquote {
   border: none;
