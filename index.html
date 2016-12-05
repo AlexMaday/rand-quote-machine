@@ -20,28 +20,33 @@
     <![endif]-->
 </head>
 
-<body>    
-   <div class="container">
+<body>
+  <div id="visibility-helpers">
+    <h3 class="visible-lg">LARGE</h3>
+    <h3 class="visible-md">MEDIUM</h3>
+    <h3 class="visible-sm">SMALL</h3>
+    <h3 class="visible-xs">XTRA-SMALL</h3>
+  </div>
+  <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h1 class="text-center">Random Quote Machine</h1>
+        <h1 id="title" class="text-center">Random Quote Machine</h1>
       </div>
     </div>
-    
     <div class="row">
-      <div class="col-md-4 col-xs-6">
-        <img id="authorImage" class="img-responsive img-rounded shadow" src="https://dl.dropboxusercontent.com/u/5729928/images/rqm/08.jpg" alt="A picture of Margaret Mead">
+      <div class="col-xs-4">
+        <img id="authorImage" class="img-responsive img-rounded shadow" src="https://dl.dropboxusercontent.com/u/5729928/images/rqm/08.jpg"
+          alt="A picture of Margaret Mead">
       </div>
-      <div class="col-md-8 col-xs-6">
+      <div class="col-xs-8">
         <!--Inner row 1-->
-
         <div class="row">
-         <div class="col-sm-12">
+          <div class="col-sm-12">
             <blockquote>
-             <h2 id="quoteText">Always remember that you are absolutely unique. Just like everyone else.</h2>
-             <footer><cite id="author">Margaret Mead</cite></footer>
-           </blockquote>
-         </div>
+              <h2 id="quoteText">Always remember that you are absolutely unique. Just like everyone else.</h2>
+              <footer><cite id="author">Margaret Mead</cite></footer>
+            </blockquote>
+          </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-6">
@@ -50,23 +55,24 @@
           <div class="col-md-6 col-sm-6 col-xs-6">
             <!--  https://publish.twitter.com/# -->
             <!-- Adding custom code to populate data-text with current quote-->
-  <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Learn to code HTML/CSS & JavaScript with @freeCodeCamp." data-via="alexmaday" data-related="freeCodeCamp, codeNewbies" data-show-count="false" data-hashtags="randomQuoteMachine">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+            <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Learn to code HTML/CSS & JavaScript with @freeCodeCamp."
+              data-via="alexmaday" data-related="freeCodeCamp, codeNewbies" data-show-count="false" data-hashtags="randomQuoteMachine">Tweet</a>
+            <script
+              async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
         </div>
       </div>
-    </div> <!-- end quote-content -->
-    
+    </div>
+    <!-- end quote-content -->
     <hr />
-    
     <div class="row">
       <footer class="col-sm-12">
         <h4 class="text-center">Made with &hearts; by Alex Maday &copy;2016</h4>
       </footer>
     </div>
-  </div> <!-- end container -->
-  
-   <!--Lo Jack method of preloading images-->
+  </div>
+  <!-- end container -->
+  <!--Lo Jack method of preloading images-->
   <div class="hidden">
     <img src="https://dl.dropboxusercontent.com/u/5729928/images/rqm/00.jpg" alt="A picture of Buckminster Fuller">
     <img src="https://dl.dropboxusercontent.com/u/5729928/images/rqm/01.jpg" alt="A picture of Albert Einstein">
@@ -79,11 +85,9 @@
     <img src="https://dl.dropboxusercontent.com/u/5729928/images/rqm/08.jpg" alt="A picture of Margaret Mead">
     <img src="https://dl.dropboxusercontent.com/u/5729928/images/rqm/09.jpg" alt="A picture of Ralph Waldo Emerson">
     <img src="https://dl.dropboxusercontent.com/u/5729928/images/rqm/10.jpg" alt="A picture of Mahatma Gandhi">
-    <img src="https://dl.dropboxusercontent.com/u/5729928/images/rqm/11.jpg" alt="An image of Benjamin Franklin">    
+    <img src="https://dl.dropboxusercontent.com/u/5729928/images/rqm/11.jpg" alt="An image of Benjamin Franklin">
     <img src="https://dl.dropboxusercontent.com/u/5729928/images/rqm/12.jpg" alt="A picture of Steve Jobs">
-    
   </div>
-  
   <script src="js/script.js"></script>
 </body>
 
