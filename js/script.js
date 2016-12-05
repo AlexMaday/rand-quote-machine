@@ -51,7 +51,7 @@ var quotations =
       "authorImage": "https://dl.dropboxusercontent.com/u/5729928/images/rqm/08.jpg"
    },
    {
-       "text":"We do what we must, and call it by the best names.",
+       "text":"The only way to have a friend is to be one.",
       "author":"Ralph Waldo Emerson",
       "authorImage": "https://dl.dropboxusercontent.com/u/5729928/images/rqm/09.jpg"
    },
