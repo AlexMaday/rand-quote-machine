@@ -2,6 +2,10 @@ TODO
 
 === BRANCH BRANCH BRANCH ===
 For the following, use branches YO
+
+- change fonts from ems and pixels to rems (https://snook.ca/archives/html_and_css/font-size-with-rem)
+-RESPONSIVE FOR IPHONE needs attention *both* portrait and esp landscape!
+    set media query for 400px
 - fix button smashing prob on small screens
 - consider changing layout drastically for small screens - see iPhone for problems
 - offsets to bring things tighter towards the center. ? perhaps
