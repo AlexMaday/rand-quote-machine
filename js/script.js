@@ -91,11 +91,9 @@ var newQuote = function() {
     author.innerHTML = quotations[choice]["author"];
 
     // tweetText.setAttribute('data-text', quotations[choice]["text"]);
-    return true;
+    this.blur();
+    return false;
 }
 
 getQuote.addEventListener("click", newQuote);
 
-document.onload = function() {
-
-};
