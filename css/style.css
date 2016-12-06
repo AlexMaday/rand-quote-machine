@@ -2,6 +2,7 @@ body {
   font-family: 'Cormorant Garamond';
   margin-top: 30px;
   font-size: 16px;
+  background: url('../images/bg.png');
 }
 h1 {
   font-size: 5.75rem;
