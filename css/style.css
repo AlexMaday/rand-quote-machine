@@ -26,6 +26,9 @@ blockquote footer {
   }
 }
 @media (max-width: 768px) {
+  body {
+    margin-top: 10px;
+  }
   blockquote {
     /*height: initial;*/
   }
