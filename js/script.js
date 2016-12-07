@@ -81,7 +81,8 @@ var quoteText = document.getElementById('quoteText');
 var author = document.getElementById('author');
 var authorImage = document.getElementById('authorImage');
 var getQuote = document.getElementById('getQuote');
-var tweetText = document.getElementById('btnTweet');
+// var tweetText = document.getElementById('btnTweet');
+var tweetText = document.getElementById("btnTweet");
 
 // replace quote contents on page and twitter's data-text attribute 
 var newQuote = function() {
