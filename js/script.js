@@ -97,7 +97,7 @@ var newQuote = function() {
     authorImage.src = quotations[choice]["authorImage"];
     quoteText.innerText = quotations[choice]["text"];
     author.innerHTML = quotations[choice]["author"];
-
+    tweetText.setAttribute('data-text', quotations[choice]['text']);
     this.blur();
     return false;
 }
