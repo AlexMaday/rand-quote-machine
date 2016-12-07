@@ -76,6 +76,7 @@ var quotations =
        "authorImage": "./images/12.jpg"
    }
 ];
+var lastRandom = 9; 
 var quoteText = document.getElementById('quoteText');
 var author = document.getElementById('author');
 var authorImage = document.getElementById('authorImage');
@@ -84,8 +85,14 @@ var getQuote = document.getElementById('getQuote');
 
 // replace quote contents on page and twitter's data-text attribute 
 var newQuote = function() {
-    var choice = Math.floor(Math.random() * quotations.length);
-    
+    // var choice = Math.floor(Math.random() * quotations.length);
+    do {
+        var choice = Math.floor(Math.random() * quotations.length);
+        if (choice != lastRandom) { 
+            lastRandom = choice;
+            break;
+        }
+    } while (choice == lastRandom);
     authorImage.src = quotations[choice]["authorImage"];
     quoteText.innerText = quotations[choice]["text"];
     author.innerHTML = quotations[choice]["author"];
