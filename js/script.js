@@ -76,7 +76,8 @@ var quotations =
        "authorImage": "./images/12.jpg"
    }
 ];
-var lastRandom = choice = 9; 
+var lastRandom = 9;
+var choice = 9; 
 var quoteText = document.getElementById('quoteText');
 var author = document.getElementById('author');
 var authorImage = document.getElementById('authorImage');
@@ -84,9 +85,8 @@ var getQuote = document.getElementById('getQuote');
 // var tweetText = document.getElementById('btnTweet');
 var tweetText = document.getElementById("btnTweet");
 
-// replace quote contents on page and twitter's data-text attribute 
+
 var newQuote = function() {
-    // var choice = Math.floor(Math.random() * quotations.length);
     do {
         choice = Math.floor(Math.random() * quotations.length);
         if (choice != lastRandom) { 
@@ -97,6 +97,8 @@ var newQuote = function() {
     authorImage.src = quotations[choice]["authorImage"];
     quoteText.innerText = quotations[choice]["text"];
     author.innerHTML = quotations[choice]["author"];
+
+    // replace quote contents on page and twitter's data-text attribute 
     tweetText.setAttribute('data-text', quotations[choice]['text']);
     this.blur();
     return false;
@@ -106,6 +108,5 @@ getQuote.addEventListener("click", newQuote);
 
 // DUHHH - I need to set an event listener for the tweet button
 tweetText.addEventListener("click", function() {
-    debugger;
     tweetText.setAttribute('data-text', quotations[choice]["text"]);
 });
