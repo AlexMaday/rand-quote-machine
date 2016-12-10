@@ -21,6 +21,11 @@ blockquote {
 blockquote footer {
   font-size: 100%;
 }
+#tweetButton {
+  background-color: #1DA1F2;
+  color: #fff;
+  font-family: sans-serif;
+}
 @media (max-width: 992px) {
   h2#quoteText {
     font-size: 1.5em;

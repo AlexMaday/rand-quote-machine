@@ -84,7 +84,7 @@ window.onload = function () {
     var author = document.getElementById('author');
     var authorImage = document.getElementById('authorImage');
     var getQuote = document.getElementById('getQuote');
-
+    var tweetButton = document.getElementById('tweetButton');
 
     var newQuote = function() {
         do {
@@ -94,15 +94,23 @@ window.onload = function () {
                 break;
             }
         } while (choice == lastRandom);
-        authorImage.src = quotations[choice]["authorImage"];
-        quoteText.innerText = quotations[choice]["text"];
-        author.innerHTML = quotations[choice]["author"];
+        authorImage.src = quotations[choice].authorImage;
+        quoteText.innerText = quotations[choice].text;
+        author.innerHTML = quotations[choice].author;
 
         this.blur();
         return false;
     }
 
+    var tweet = function() {
+    
+        var quoteString = encodeURIComponent(quotations[choice].text + " - " + quotations[choice].author);
+        var related = "freeCodeCamp,CodeNewbies";
+        var strWindowFeatures = "width=550, height=400, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0";
+        window.open('https://twitter.com/intent/tweet?hashtags=freeCodeCamp&related=freecodecamp,CodeNewbies&text=' + quoteString, strWindowFeatures);
+    };
 
     getQuote.addEventListener("click", newQuote);
-    console.log('and finished');
+    tweetButton.addEventListener("click", tweet);
+
 }
