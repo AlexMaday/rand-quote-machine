@@ -30,9 +30,6 @@ blockquote footer {
   body {
     margin-top: 10px;
   }
-  blockquote {
-    /*height: initial;*/
-  }
   h1#title {
     font-size: 4.9rem;
     text-align: left;

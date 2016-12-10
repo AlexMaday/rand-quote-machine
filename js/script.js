@@ -84,8 +84,6 @@ window.onload = function () {
     var author = document.getElementById('author');
     var authorImage = document.getElementById('authorImage');
     var getQuote = document.getElementById('getQuote');
-    // var tweetText = document.getElementById('btnTweet');
-    var tweetText = document.getElementById("btnTweet");
 
 
     var newQuote = function() {
@@ -100,9 +98,6 @@ window.onload = function () {
         quoteText.innerText = quotations[choice]["text"];
         author.innerHTML = quotations[choice]["author"];
 
-        // The twitter widget will use data-text attr *if present* - otherwise it will use the page title
-        // but it will only do it one time waaaa
-        document.title = quotations[choice]['text'];
         this.blur();
         return false;
     }
