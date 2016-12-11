@@ -51,6 +51,6 @@ blockquote footer {
 }
 @media (max-width: 357px) {
   h2#quoteText {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
